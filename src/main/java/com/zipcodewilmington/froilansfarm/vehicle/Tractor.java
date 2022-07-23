@@ -19,20 +19,20 @@ public class Tractor extends Vehicle implements FarmVehicle{
 
     public int harvest(CropRow cropRow){
         for(int i = 0; i < cropRow.getSize(); i++){
-            Silo.addProduce(cropRow.getCrop(i).toString());
+            Silo.addProduce(cropRow.getObject(i).toString());
         }
-        cropRow.clearRow();
+        cropRow.clear();
 
         return 0;
     }
 
 
-    public String makeNoise(){
-        return makeNoise();
+    public void makeNoise(){
+        System.out.println("B-b-brruummm");
     }
 
-    public Boolean isRiding(){
-        return null;
+    public void isRiding(){
+
     }
 
     public void stopRiding() {
