@@ -3,9 +3,11 @@ package com.zipcodewilmington.froilansfarm.shelter;
 import com.zipcodewilmington.froilansfarm.Holdable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Shelter implements Holdable {
     static ArrayList<Holdable> shelter = new ArrayList<Holdable>();
+
     public void clear() {
         this.shelter.clear();
     }
@@ -18,7 +20,9 @@ public abstract class Shelter implements Holdable {
         this.shelter.add(object);
     }
 
-    public Holdable getObject(int integer){
+    public Holdable getObject(int integer) {
         return this.shelter.get(integer);
     }
+
 }
+
